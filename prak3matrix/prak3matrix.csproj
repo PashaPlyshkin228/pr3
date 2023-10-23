@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1660203640_53-klublady-ru-p-tatuirovka-ilya-muromets-foto-53.jpg" />
+    <None Remove="3F3F_Skin-Default.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="3F3F_Skin-Default.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="prak3matrix.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prak3matrix"
+        mc:Ignorable="d"
+        Title="Практическая работа№3 вариант-5" Height="450" Width="800" Icon="/3F3F_Skin-Default.jpg" ResizeMode="NoResize">
+    <Grid>
+        <Menu VerticalAlignment="Top" Grid.ColumnSpan="2" Height="18">
+            <MenuItem Header="Файл">
+                <MenuItem Header="О программе" x:Name="Info" Click="Info_Click"/>
+                <MenuItem Header="Выход" x:Name="Exit" Click="Exit_Click"/>
+            </MenuItem>
+        </Menu>
+        <GroupBox Header="" Margin="0,23,0,0" Grid.ColumnSpan="2">
+            <Grid>
+                <Label Content="Кол-во строк" HorizontalAlignment="Left" Margin="158,10,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="stroki" HorizontalAlignment="Left" Margin="158,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="28" MaxLength="1"/>
+                <Label Content="Кол-во столбцов" HorizontalAlignment="Left" Margin="351,10,0,0" VerticalAlignment="Top" Width="106"/>
+                <TextBox x:Name="stolb" HorizontalAlignment="Left" Margin="351,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="28" MaxLength="1"/>
+                <Button x:Name="GenerateMatrix" Click="GenerateMatrix_Click" Content="Сгенерировать матрицу" HorizontalAlignment="Left" Margin="245,82,0,0" VerticalAlignment="Top" Width="149" Background="#FF98B3EA"/>
+                <TextBox IsReadOnly="True" x:Name="matrica" HorizontalAlignment="Left" Margin="16,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="569" Height="245"/>
+                <Button Background="#FF98B3EA" x:Name="Resultat" Click="Resultat_Click" Content="Результат" HorizontalAlignment="Left" Margin="597,92,0,0" VerticalAlignment="Top" Width="138"/>
+                <Label Content="Кол-во похожих строк" HorizontalAlignment="Left" Margin="597,10,0,0" VerticalAlignment="Top" Width="162"/>
+                <TextBox IsReadOnly="True" x:Name="rez" HorizontalAlignment="Left" Margin="597,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" Height="28"/>
+                <Button Background="#FF98B3EA" x:Name="Clear" Click="Clear_Click" Content="Очистить" HorizontalAlignment="Left" Margin="597,142,0,0" VerticalAlignment="Top" Width="138"/>
+
+            </Grid>
+        </GroupBox>
+
+
+    </Grid>
+</Window>
